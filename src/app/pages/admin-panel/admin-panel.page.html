@@ -1,0 +1,23 @@
+<ion-header>
+  <div class="header">
+    <ion-avatar>
+      <img src="./assets/img/avatar.png" alt="avatar-img" width="100%">
+    </ion-avatar>
+    <div class="logo">
+      <img src="./assets/img/shlogo.png" alt="logo">
+    </div>
+    <div class="logout">
+      <ion-button shape="round" (click)="OpenPopover()">logout</ion-button>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="buttons">
+      <ion-button expand="block" (click)="AddProduct()" >Mahsulotni ro'yxatdan o'tkazish</ion-button>
+      <ion-button expand="block">Ma'lum mahsulotdan qancha qolganligi</ion-button>
+      <ion-button expand="block">Ma'lum mahsulotni kim sotganligi</ion-button>
+      <ion-button expand="block" (click)="VendorsList()">Sotuvchilar ro'xati</ion-button>
+      <ion-button expand="block">Admin</ion-button>
+  </div>
+</ion-content>
