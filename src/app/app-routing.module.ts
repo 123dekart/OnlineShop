@@ -23,6 +23,22 @@ const routes: Routes = [
     path: 'add-product',
     loadChildren: () => import('./pages/add-product/add-product.module').then( m => m.AddProductPageModule)
   },
+  {
+    path: 'admin-panel',
+    loadChildren: () => import('./pages/admin-panel/admin-panel.module').then( m => m.AdminPanelPageModule)
+  },
+  {
+    path: 'vendors',
+    loadChildren: () => import('./pages/vendors/vendors.module').then( m => m.VendorsPageModule)
+  },
+  {
+    path: 'add-vendor',
+    loadChildren: () => import('./pages/add-vendor/add-vendor.module').then( m => m.AddVendorPageModule)
+  },
+  {
+    path: 'logout-popover',
+    loadChildren: () => import('./pages/logout-popover/logout-popover.module').then( m => m.LogoutPopoverPageModule)
+  },
 
  
 
